@@ -19,6 +19,15 @@
         },
       },
     },
+    "vtsls": {
+      "settings": {
+        "vtsls": {
+          "experimental": {
+            "maxInlayHintLength": 15,
+          },
+        },
+      },
+    },
   },
   "languages": {
     "SQL": {

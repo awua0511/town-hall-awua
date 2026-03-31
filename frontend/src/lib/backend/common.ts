@@ -2,6 +2,13 @@ export type BackendResult<T> = { ok: true; data: T } | { ok: false; status: numb
 
 export const BACKEND_URL = 'http://localhost:3000';
 
+export async function fetchBackend(customFetch: typeof fetch, path: string, init?: RequestInit) {
+  return await customFetch(`${BACKEND_URL}${path}`, {
+    ...init,
+    credentials: 'include'
+  });
+}
+
 export async function handleResponse<T>(resp: Response): Promise<BackendResult<T>> {
   if (!resp.ok) {
     const body = await resp.text();
