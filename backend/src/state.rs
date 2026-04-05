@@ -64,7 +64,7 @@ impl AppState {
             db_pool: pool,
             oauth_client: gh_oauth_client,
             frontend_url: frontend_url.clone(),
-            backend_url: frontend_url.clone(),
+            backend_url: backend_url.to_string(),
         })
     }
 }

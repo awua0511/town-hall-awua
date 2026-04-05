@@ -161,7 +161,7 @@ pub async fn github_callback(
     }
 
     Ok(Redirect::to(&format!(
-        "{}/user/{internal_user_id}/{handle}",
+        "{}/u/{handle}",
         state.frontend_url
     )))
 }

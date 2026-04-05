@@ -1,6 +1,8 @@
 pub mod auth;
 mod helper;
+pub mod guild;
 pub mod quest;
+pub mod solution;
 pub mod user;
 
 use axum::{

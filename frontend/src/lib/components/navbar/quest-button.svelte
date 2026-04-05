@@ -32,7 +32,7 @@
     const questId = result.data;
     dialogOpen = false;
     questTitle = '';
-    await goto(`/quest/${questId}`);
+    await goto(`/q/${questId}-new-quest`);
   }
 </script>
 
